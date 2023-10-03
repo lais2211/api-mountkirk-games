@@ -1,0 +1,489 @@
+{
+	"info": {
+		"_postman_id": "f336384c-3299-4c8b-89bd-f753f4753e4d",
+		"name": "Api Mountkirk Games",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18506869"
+	},
+	"item": [
+		{
+			"name": "405",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "campo",
+						"value": "valor",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://34.149.4.124.nip.io/mountkirkgames.com/v2/orders",
+					"protocol": "https",
+					"host": [
+						"34",
+						"149",
+						"4",
+						"124",
+						"nip",
+						"io"
+					],
+					"path": [
+						"mountkirkgames.com",
+						"v2",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "404",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://34.149.4.124.nip.io/mountkirkgames.com/v2/users/error?id=123",
+					"protocol": "https",
+					"host": [
+						"34",
+						"149",
+						"4",
+						"124",
+						"nip",
+						"io"
+					],
+					"path": [
+						"mountkirkgames.com",
+						"v2",
+						"users",
+						"error"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "123"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "500 STORE",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://34.149.4.124.nip.io/mountkirkgames.com/v2/users?id=123&apikey=QTVKdRrGB8mWv0tos7jAUchAJJzhueO5FXfod4R9wzs8rQfz",
+					"protocol": "https",
+					"host": [
+						"34",
+						"149",
+						"4",
+						"124",
+						"nip",
+						"io"
+					],
+					"path": [
+						"mountkirkgames.com",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "123"
+						},
+						{
+							"key": "apikey",
+							"value": "QTVKdRrGB8mWv0tos7jAUchAJJzhueO5FXfod4R9wzs8rQfz"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "200 STORE",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://34.149.4.124.nip.io/mountkirkgames.com/v2/users?id=200&apikey=QTVKdRrGB8mWv0tos7jAUchAJJzhueO5FXfod4R9wzs8rQfz",
+					"protocol": "https",
+					"host": [
+						"34",
+						"149",
+						"4",
+						"124",
+						"nip",
+						"io"
+					],
+					"path": [
+						"mountkirkgames.com",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "200"
+						},
+						{
+							"key": "apikey",
+							"value": "QTVKdRrGB8mWv0tos7jAUchAJJzhueO5FXfod4R9wzs8rQfz"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "200 MATCHES",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://34.149.4.124.nip.io/mountkirkgames.com/v2/orders?id=200&apikey=FBKpiEc6Bcf4n1mCeQlevlARCXiuZCa8Bq1BCGZHcy6zObhZ",
+					"protocol": "https",
+					"host": [
+						"34",
+						"149",
+						"4",
+						"124",
+						"nip",
+						"io"
+					],
+					"path": [
+						"mountkirkgames.com",
+						"v2",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "200"
+						},
+						{
+							"key": "apikey",
+							"value": "FBKpiEc6Bcf4n1mCeQlevlARCXiuZCa8Bq1BCGZHcy6zObhZ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "500 MATCHES",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://34.149.4.124.nip.io/mountkirkgames.com/v2/orders?id=123&apikey=FBKpiEc6Bcf4n1mCeQlevlARCXiuZCa8Bq1BCGZHcy6zObhZ",
+					"protocol": "https",
+					"host": [
+						"34",
+						"149",
+						"4",
+						"124",
+						"nip",
+						"io"
+					],
+					"path": [
+						"mountkirkgames.com",
+						"v2",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "123"
+						},
+						{
+							"key": "apikey",
+							"value": "FBKpiEc6Bcf4n1mCeQlevlARCXiuZCa8Bq1BCGZHcy6zObhZ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "401",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://34.149.4.124.nip.io/mountkirkgames.com/v2/orders?id=123",
+					"protocol": "https",
+					"host": [
+						"34",
+						"149",
+						"4",
+						"124",
+						"nip",
+						"io"
+					],
+					"path": [
+						"mountkirkgames.com",
+						"v2",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "123"
+						},
+						{
+							"key": "apikey",
+							"value": "FBKpiEc6Bcf4n1mCeQlevlARCXiuZCa8Bq1BCGZHcy6zObhZ",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "400 STORE",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://34.149.4.124.nip.io/mountkirkgames.com/v2/users?apikey=QTVKdRrGB8mWv0tos7jAUchAJJzhueO5FXfod4R9wzs8rQfz",
+					"protocol": "https",
+					"host": [
+						"34",
+						"149",
+						"4",
+						"124",
+						"nip",
+						"io"
+					],
+					"path": [
+						"mountkirkgames.com",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "200",
+							"disabled": true
+						},
+						{
+							"key": "apikey",
+							"value": "QTVKdRrGB8mWv0tos7jAUchAJJzhueO5FXfod4R9wzs8rQfz"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "400 MATCHES",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://34.149.4.124.nip.io/mountkirkgames.com/v2/orders?apikey=FBKpiEc6Bcf4n1mCeQlevlARCXiuZCa8Bq1BCGZHcy6zObhZ",
+					"protocol": "https",
+					"host": [
+						"34",
+						"149",
+						"4",
+						"124",
+						"nip",
+						"io"
+					],
+					"path": [
+						"mountkirkgames.com",
+						"v2",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "200",
+							"disabled": true
+						},
+						{
+							"key": "apikey",
+							"value": "FBKpiEc6Bcf4n1mCeQlevlARCXiuZCa8Bq1BCGZHcy6zObhZ"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

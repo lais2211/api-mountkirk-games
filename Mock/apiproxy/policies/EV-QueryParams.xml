@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables name="EV-QueryParams">
+  <DisplayName>EV-QueryParams</DisplayName>
+  <Source>request</Source>
+  <QueryParam name="id">
+    <Pattern ignoreCase="true">{id}</Pattern>
+  </QueryParam>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</ExtractVariables>

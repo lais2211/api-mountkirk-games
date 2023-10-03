@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-set-response-500-2">
+    <DisplayName>AM-set-response-500-2</DisplayName>
+    <Set>
+        <Payload contentType="application/json">
+            {
+  "error":500,
+  "path": "/orders"
+}
+            </Payload>
+        <StatusCode>500</StatusCode>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="response"/>
+</AssignMessage>

@@ -1,0 +1,28 @@
+<APIProxy revision="9" name="api-mountkirk-games-v1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1696297433778</CreatedAt>
+    <LastModifiedAt>1696297433778</LastModifiedAt>
+    <BasePaths>/mountkirkgames.com/v2</BasePaths>
+    <Policies>
+        <Policy>verify-api-key</Policy>
+        <Policy>remove-query-param-apikey</Policy>
+        <Policy>JS-ValidateRequest</Policy>
+        <Policy>AM-DisablePathCopy</Policy>
+        <Policy>RF-BadRequest-400</Policy>
+        <Policy>RF-MethodNotAllowed-405</Policy>
+        <Policy>RF-ResourceNotFound-404</Policy>
+        <Policy>VA-ApiKey</Policy>
+        <Policy>remove-query-param</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://ValidateRequest.js</Resource>
+    </Resources>
+    <TargetEndpoints>
+        <TargetEndpoint>Matches</TargetEndpoint>
+        <TargetEndpoint>Store</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

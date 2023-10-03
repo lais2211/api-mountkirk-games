@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>RF-MethodNotAllowed-405</Name>
+                <Condition>(request.verb != "GET")</Condition>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
+    <Flows>
+        <Flow name="GET - MATCHES">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>VA-ApiKey</Name>
+                </Step>
+                <Step>
+                    <Name>remove-query-param</Name>
+                </Step>
+                <Step>
+                    <Name>JS-ValidateRequest</Name>
+                </Step>
+                <Step>
+                    <Name>RF-BadRequest-400</Name>
+                    <Condition>(errorDescription != null)</Condition>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/users") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="GET - STORE">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>verify-api-key</Name>
+                </Step>
+                <Step>
+                    <Name>remove-query-param-apikey</Name>
+                </Step>
+                <Step>
+                    <Name>JS-ValidateRequest</Name>
+                </Step>
+                <Step>
+                    <Name>RF-BadRequest-400</Name>
+                    <Condition>(errorDescription != null)</Condition>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/orders") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="404">
+            <Description/>
+            <Request/>
+            <Response>
+                <Step>
+                    <Name>RF-ResourceNotFound-404</Name>
+                </Step>
+            </Response>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/mountkirkgames.com/v2</BasePath>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="GET MATCHES">
+        <TargetEndpoint>Matches</TargetEndpoint>
+        <Condition>(proxy.pathsuffix MatchesPath "/orders") and (request.verb = "GET")</Condition>
+    </RouteRule>
+    <RouteRule name="GET STORE">
+        <TargetEndpoint>Store</TargetEndpoint>
+        <Condition>(proxy.pathsuffix MatchesPath "/users") and (request.verb = "GET")</Condition>
+    </RouteRule>
+    <RouteRule name="noRouteRule"/>
+</ProxyEndpoint>

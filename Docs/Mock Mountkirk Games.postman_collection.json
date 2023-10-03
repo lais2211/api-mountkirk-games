@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "463619e7-9898-4cdc-bf22-754e1df2d3bc",
+		"name": "Mock Mountkirk Games",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18506869"
+	},
+	"item": [
+		{
+			"name": "500 matches",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "campo",
+						"value": "valor",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://34.149.4.124.nip.io/api-mountkirk-games-v1-mock/users?id=123",
+					"protocol": "https",
+					"host": [
+						"34",
+						"149",
+						"4",
+						"124",
+						"nip",
+						"io"
+					],
+					"path": [
+						"api-mountkirk-games-v1-mock",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "200 matches",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "campo",
+						"value": "valor",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://34.149.4.124.nip.io/api-mountkirk-games-v1-mock/users?id=200",
+					"protocol": "https",
+					"host": [
+						"34",
+						"149",
+						"4",
+						"124",
+						"nip",
+						"io"
+					],
+					"path": [
+						"api-mountkirk-games-v1-mock",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "200 store",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "campo",
+						"value": "valor",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://34.149.4.124.nip.io/api-mountkirk-games-v1-mock/orders?id=200",
+					"protocol": "https",
+					"host": [
+						"34",
+						"149",
+						"4",
+						"124",
+						"nip",
+						"io"
+					],
+					"path": [
+						"api-mountkirk-games-v1-mock",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "500 store",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "campo",
+						"value": "valor",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://34.149.4.124.nip.io/api-mountkirk-games-v1-mock/orders?id=123",
+					"protocol": "https",
+					"host": [
+						"34",
+						"149",
+						"4",
+						"124",
+						"nip",
+						"io"
+					],
+					"path": [
+						"api-mountkirk-games-v1-mock",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

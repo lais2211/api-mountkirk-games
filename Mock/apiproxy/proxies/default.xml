@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>EV-QueryParams</Name>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
+    <Flows>
+        <Flow name="GET - MATCHES">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>AM-set-response-500</Name>
+                </Step>
+                <Step>
+                    <Name>AM-set-response-200</Name>
+                    <Condition>id == 200</Condition>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/users") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="GET - STORE">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>AM-set-response-500-2</Name>
+                </Step>
+                <Step>
+                    <Name>AM-set-response-200-2</Name>
+                    <Condition>id == 200</Condition>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/orders") and (request.verb = "GET")</Condition>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/api-mountkirk-games-v1-mock</BasePath>
+    </HTTPProxyConnection>
+    <RouteRule name="noroute"/>
+</ProxyEndpoint>
